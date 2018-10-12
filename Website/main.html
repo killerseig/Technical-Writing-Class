@@ -7,7 +7,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="../../../../favicon.ico">
 
-		<title>Jumbotron Template for Bootstrap</title>
+		<title>Found Science</title>
 
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,6 +15,7 @@
 
 	</head>
 	<body>
+		<!--
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +41,8 @@
 			</ul>
 		  </div>
 		</nav>
+		-->
+		
 		<main role="main">
 
 		  <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -71,94 +74,228 @@
 			</div>
 
 			<div class="container">
-			
-				<div class="row">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-				</div>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Chemistry</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Computer Science</a>
+					</li>
+				</ul>
 				
-				<div class="row">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row text-center text-md-center">
+							<div class="table-responsive">
+								<table class="table">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://www.khanacademy.org/" target="_blank">
+													<img src="images/KHANACADEMY.png" alt="Khan Academy Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Khan Academy! YEAH!</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://code.org/" target="_blank">
+													<img src="images/CODE.png" alt="Code.org Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Code.org! YEAH!</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="row text-center text-md-center">
+							<div class="table-responsive">
+								<table class="table">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://www.khanacademy.org/" target="_blank">
+													<img src="images/KHANACADEMY.png" alt="Khan Academy Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Khan Academy! YEAH!</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://code.org/" target="_blank">
+													<img src="images/CODE.png" alt="Code.org Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Code.org! YEAH!</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="row text-center text-md-center">
+							<div class="table-responsive">
+								<table class="table">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://www.khanacademy.org/" target="_blank">
+													<img src="images/KHANACADEMY.png" alt="Khan Academy Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Khan Academy! YEAH!</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://code.org/" target="_blank">
+													<img src="images/CODE.png" alt="Code.org Link">
+													<p>link here</p>
+												</a>
+											</td>
+											<td>
+												<p>This is Code.org! YEAH!</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
-				
-				<div class="row">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="images/Card_Image.svg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-				</div>
-				<hr>
 			</div>
 		</main>
 
-		<footer class="container">
-		  <p>&copy; Christopher Larsen 2018-2019</p>
+		<!-- Footer -->
+		<footer class="page-footer font-small mdb-color pt-4">
+
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left">
+
+			  <!-- Footer links -->
+			  <div class="row text-center text-md-left mt-3 pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+				  <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+					adipisicing elit.</p>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+				  <p>
+					<a href="#!">MDBootstrap</a>
+				  </p>
+				  <p>
+					<a href="#!">MDWordPress</a>
+				  </p>
+				  <p>
+					<a href="#!">BrandFlow</a>
+				  </p>
+				  <p>
+					<a href="#!">Bootstrap Angular</a>
+				  </p>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+				  <p>
+					<a href="#!">Your Account</a>
+				  </p>
+				  <p>
+					<a href="#!">Become an Affiliate</a>
+				  </p>
+				  <p>
+					<a href="#!">Shipping Rates</a>
+				  </p>
+				  <p>
+					<a href="#!">Help</a>
+				  </p>
+				</div>
+
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+				  <p>
+					<i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+				  <p>
+					<i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+				  <p>
+					<i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+				  <p>
+					<i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+				</div>
+			  </div>
+			  
+			<hr>
+			    <div class="row d-flex align-items-center">
+					<div class="col-md-7 col-lg-8">
+						<p class="text-center text-md-left">© 2018 Copyright: <span class="yellow-text">Richard Hess & Christopher Larsen</span></p>
+					</div>
+					<div class="col-md-5 col-lg-4 ml-lg-0">
+						<div class="text-center text-md-right">
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item">
+									<a class="btn-floating btn-sm rgba-white-slight mx-1">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="btn-floating btn-sm rgba-white-slight mx-1">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="btn-floating btn-sm rgba-white-slight mx-1">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="btn-floating btn-sm rgba-white-slight mx-1">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</footer>
+		<!-- Footer -->
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->

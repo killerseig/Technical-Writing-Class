@@ -27,3 +27,29 @@
     max-height: 200px;
     opacity: 1;
 }
+
+.tab-content
+{
+	padding: 2em;
+}
+
+footer
+{
+	background-color: #18121E;
+	margin-top: 5em;
+}
+
+footer p
+{
+	color: white;
+}
+
+footer a
+{
+	color: #984B43;
+}
+
+footer h1, h2, h3, h4, h5, h6, .yellow-text
+{
+	color: #EAC67A;
+}
