@@ -8,6 +8,16 @@
 	margin-bottom: 5em;
 }
 
+.carousel .img-fluid 
+{
+  width:100%;
+  max-height: 45em;
+}
+
+.carousel img
+{
+	width:100%;
+}
 .dropdown .dropdown-menu 
 {
     -webkit-transition: all 0.5s;
