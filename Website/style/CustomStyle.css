@@ -3,7 +3,7 @@
 	margin: .5em;
 }
 
-.carousel
+.navbar
 {
 	margin-bottom: 5em;
 }
@@ -43,10 +43,9 @@
 	padding: 2em;
 }
 
-footer
+footer, .bg-dark
 {
-	background-color: #18121E;
-	margin-top: 5em;
+	background-color: #18121E !important;
 }
 
 footer p
@@ -59,7 +58,7 @@ footer a
 	color: #984B43;
 }
 
-footer h1, h2, h3, h4, h5, h6, .yellow-text
+footer h1, h2, h3, h4, h5, h6, .yellow-text, .navbar-brand
 {
-	color: #EAC67A;
+	color: #EAC67A !important;
 }
