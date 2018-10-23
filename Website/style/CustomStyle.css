@@ -5,7 +5,7 @@
 
 .navbar
 {
-	margin-bottom: 5em;
+	margin-bottom: 5rem !important;
 }
 
 .carousel .d-block
@@ -68,4 +68,37 @@ footer a
 footer h1, h2, h3, h4, h5, h6, .yellow-text, .navbar-brand
 {
 	color: #EAC67A !important;
+}
+
+.rounded-border 
+{
+    border-radius: 10px!important;
+}
+
+.shadow-primary 
+{
+    -webkit-box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+main .container, main .row
+{
+	margin-bottom: 4rem;
+}
+
+.jumbotron
+{
+	border-radius: 0rem;
+}
+
+.fa
+{
+	font-size: 2 em;
 }
