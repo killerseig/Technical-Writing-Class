@@ -16,8 +16,7 @@
 		<link rel="stylesheet" href="../style/CustomStyle.css">
 
 		<!-- Icons -->
-		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		
 	</head>
 	<body>
@@ -43,6 +42,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
 							</li>
+							
 							<!--
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,30 +59,8 @@
 			</nav>
 			
 			
-			<div class="container">
-				<div ng-app="myApp" ng-controller="namesCtrl">
 
-				<p>Type a letter in the input field:</p>
-
-				<p><input type="text" ng-model="test"></p>
-
-				<ul>
-				  <li ng-repeat="x in names | filter:test">
-					{{ x }}
-				  </li>
-				</ul>
-
-				</div>
-			</div>
-			
-			
-			
-			
-			
-			
-			
-
-			<div class="container">
+			<div class="container" ng-app="search" ng-controller="searchContent">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
@@ -93,34 +71,35 @@
 					<li class="nav-item">
 						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Computer Science</a>
 					</li>
+					<li class="nav-item">
+						<p class="nav-link">Search: <input type="text" ng-model="searchBar.searchTags"></p>
+					</li>
 				</ul>
+				
+				
 				
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<div class="row text-center text-md-center">
 							<div class="table-responsive">
-								<table class="table">
+								<table class="table table-hover col-sm-12">
+									<thead>
+										<th style="width: 30%;">Tags</th>
+										<th style="width: 30%;">Image</th>
+										<th style="width: 30%;">Description</th>
+									</thead>
+									
 									<tbody>
-										<tr>
+										
+										<tr ng-repeat="item in items | filter:searchBar">
 											<td>
-												<a href="https://www.khanacademy.org/" target="_blank">
-													<img src="../images/KHANACADEMY.png" alt="Khan Academy Link">
-													<p>link here</p>
-												</a>
+												{{item.searchTags}}
 											</td>
 											<td>
-												<p>This is Khan Academy! YEAH!</p>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="https://code.org/" target="_blank">
-													<img src="../images/CODE.png" alt="Code.org Link">
-													<p>link here</p>
-												</a>
+												<img style="width:25%;" ng-src="{{item.image}}"/>
 											</td>
 											<td>
-												<p>This is Code.org! YEAH!</p>
+												{{item.discription}}
 											</td>
 										</tr>
 									</tbody>
@@ -128,6 +107,8 @@
 							</div>
 						</div>
 					</div>
+					
+					
 					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 						<div class="row text-center text-md-center">
 							<div class="table-responsive">
@@ -203,32 +184,26 @@
 
 			  <div class="row text-center text-md-left mt-3 pb-3">
 
-				<div class="col-md-6">
+				<div class="col-md-4">
 				  <h6 class="text-uppercase mb-4 font-weight-bold">Social Media</h6>
-				  <a href="..."><p><i class="fa fa-address-book mr-3" style="font-size:36px"></i> Blog</p></a>
-				  <a href="..."><p><i class="fa fa-facebook-square mr-3" style="font-size:36px"></i> Facebook</p></a>
-				  <a href="..."><p><i class="fa fa-twitter-square mr-3" style="font-size:36px"></i> Twitter</p></a>
+				  <a href="..."><p><i class="fas fa-address-book mr-3"></i></i> Blog</p></a>
+				  <a href="..."><p><i class="fab fa-facebook-square mr-3"></i></i> Facebook</p></a>
+				  <a href="..."><p><i class="fab fa-twitter-square mr-3"></i></i> Twitter</p></a>
 				</div>
 
-				<hr class="w-100 clearfix d-md-none">
+				<div class="col-md-4">
+				</div>
 
-				<hr class="w-100 clearfix d-md-none">
-
-
-				<!-- Grid column -->
-				<hr class="w-100 clearfix d-md-none">
-
-				<!-- Grid column -->
-				<div class="col-md-6">
+				<div class="col-md-4">
 				  <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
 				  <p>
 					<i class="fa fa-home mr-3"></i> Enter Address</p>
 				  <p><i class="fa fa-envelope mr-3"></i> FoundScience@gmail.com</p>
 				</div>
 			  </div>
-			  
+
 			<hr>
-			    <div class="row d-flex align-items-center">
+				<div class="row d-flex align-items-center">
 					<div class="col-md-7 col-lg-8">
 						<p class="text-center text-md-left">© 2018 Copyright: <span class="yellow-text">Richard Hess & Christopher Larsen</span></p>
 					</div>
@@ -250,18 +225,14 @@
 		<!-- Other JavaScript -->
 		
 		<script>
-			angular.module('myApp', []).controller('namesCtrl', function($scope) {
-				$scope.names = [
-					'Jani',
-					'Carl',
-					'Margareth',
-					'Hege',
-					'Joe',
-					'Gustav',
-					'Birgit',
-					'Mary',
-					'Kai'
-				];
+			angular.module('search', []).controller('searchContent', function($scope) {
+				$scope.items = 
+					[
+						{ searchTags: "Khan Academy, Cool, Fun, Problems", image: "../images/bootstrap.png", discription: "United States" },
+						{ searchTags: "Bootstrap, CSS, Styling", image: "../images/KHANACADEMY.png", discription: "India" },
+						{ searchTags: "Code.org", image: "../images/CODE.png", discription: "United States" },
+					];
+					
 			});
 		</script>
 	</body>

@@ -3,6 +3,14 @@
 	margin: .5em;
 }
 
+hr
+{ 
+  height: 3px;
+  color: #EAC67A;
+  background-color: #EAC67A;
+  border: none;
+}
+
 .navbar
 {
 	margin-bottom: 5rem !important;
@@ -65,9 +73,19 @@ footer a
 	color: #984B43;
 }
 
-footer h1, h2, h3, h4, h5, h6, .yellow-text, .navbar-brand
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, .yellow-text, .navbar-brand
 {
 	color: #EAC67A !important;
+}
+
+h1, h2, h3, h4, h5, h6, .yellow-text, .navbar-brand
+{
+	color: #18121E;
+}
+
+.center, h1, h2, h3, h4, h5, h6
+{
+	text-align: center;
 }
 
 .rounded-border 
