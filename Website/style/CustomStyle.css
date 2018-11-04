@@ -18,7 +18,7 @@ hr
 
 .carousel .d-block
 {
-  width:100%;
+  width:auto;
   max-height: 45em;
 }
 
@@ -26,11 +26,6 @@ hr
 {
     background: rgba(0, 0, 0, 0.45);
 	border-radius: 25px;
-}
-
-.carousel img
-{
-	width:100%;
 }
 
 .dropdown .dropdown-menu 
