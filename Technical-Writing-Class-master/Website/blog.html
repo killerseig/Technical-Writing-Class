@@ -1,0 +1,339 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="logo.svg">
+
+		<title>Found Science</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    
+		<!-- Custom Style Sheet -->
+		<link rel="stylesheet" href="CustomStyle.css">
+
+		<!-- Icons -->		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+	</head>
+    <body ng-app="expandCollapseApp">
+
+        <main role="main" ng-controller="expandCollapseCtrl">
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="index.html">Found Science</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-12">
+                        <h1>Blog</h1>
+                        <hr>
+                        <div class="row">
+                        <div class="container col-md-6">
+                            <div class="card" type="button" data-toggle="collapse" data-target="#collapseDesigningAWebsite" aria-expanded="false">
+                                <img class="card-img-top" src="pictures/html_blog.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Designing a Website</h5>
+                                    <div class="content" id="collapseDesigningAWebsite">
+                                        <p>
+                                            Having the website blues? Your site styling burning everyone’s eyes? I personally ran into these issues since
+                                            I am a programmer at heart. Not so much an artist or a designer. One day explaining my problems to a web designer
+                                            he told me about a few good tools to make a guaranteed professional looking website. The first and most powerful tool is
+                                            BootStrap. The main website has great tutorials on how to use the CSS code. If you are struggling with understanding how
+                                            to do certain things on a website W3schools is a great source. W3schools explains all the resources needed to create
+                                            and host a website. From making a professional basic splash page, to making it interactive, and finally hosting the page
+                                            on a server. Even though W3schools gives you everything you need to build a website I personally find that I should flush
+                                            out the basics for things like generic images.
+                                        </p>
+                                        <p>
+                                            Once getting the style, format, and layout of the site done many people turn their attention towards images. That is where
+                                            Font Awesome comes into play. Font Awesome focuses on producing generic images that anyone can use. For instance if you are
+                                            linking to twitter but want the twitter image to be easily scalable and a different color then you can add the Font Awesome
+                                            reference and add the links to that image. The images are extremely easy to find by going to their website and using the
+                                            search bar. Plus there are instructions to use all images for Font Awesome. We only have one glaring issue after making
+                                            our webpage that is currently offline before we can/should bring it online. We need to add functionality.
+                                        </p>
+                                        <p>
+                                            If you get all the styling, images, and formatting done for your webpage you have made what designers call a splash page.
+                                            It simply means the webpage shows information but can do nothing else. Well, what happens if you want to make a search bar
+                                            for your site, or create a web builder, or a blog poster. Angular.js is one of many Java Scripting add-ons that makes coding
+                                            a lot simpler. Javascript is what allows your website to actively get edited. That way you can make a format like the
+                                            comments on a youtube video, but instead of custom coding every comment for every video Javascript can edit your code to not
+                                            only add that comment into a file, but also reference that file and add all comments for the video while using your template.
+                                            That way you can make a full working site that also changes itself to what the user desires.
+                                        </p>
+                                        <p>
+                                            Using all these resources should allow you to easily build a professional webpage that is fully customizable. Though there
+                                            will always be the caveat that googling for a specific thing like a search bar in Angular.js, but at  least now you know
+                                            what to search for and the full basics to creating a webpage without needing to use a web builder. Which will allways be more
+                                            customizable and cheaper if you do it yourself.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Posted on November 4, 2018 by Christopher Larsen
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container col-md-6">
+                            <div class="card" type="button" data-toggle="collapse" data-target="#collapseKhanAcademy" aria-expanded="false">
+                                <img class="card-img-top" src="chemistry pics/KHANACADEMY.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Khan Academy</h5>
+                                    <div class="content" id="collapseKhanAcademy">
+                                        <p>
+                                            Let me tell you a little about Khan Academy and how it had helped me.
+                                        </p>
+                                        <p>
+                                            Khan Academy is one of the best resources with which to supplement your knowledge of a multitude of subjects. It is no replacement
+                                            for a good teacher, but if you use it to supplement what you have learned in a classroom, you will find your understanding of a
+                                            subject will improve in leaps and bounds.
+                                        </p>
+                                        My personal experience of Khan Academy stems from the help I got in chemistry. When I first started on the subject I struggled with the
+                                        concepts. My teacher did what he could but I just couldn't get it. Fortunately my mother had recently heard about Khan Academy and
+                                        recommended it to me. It didn’t take me long to get into the material and soon I actually started to enjoy it.
+                                        <p>
+                                            Since I was starting to like my chemistry class, I decided to continue with it for at least another semester. I ended up using Khan
+                                            Academy for the second semester of general chemistry and then continued on through a year of organic chemistry. At this point I
+                                            have had enough practice practise so that I am able to understand new material without much extra help. This is rather fortunate
+                                            since Khan Academy does not have any material passed organic chemistry and can no longer help me, at least in this subject.
+                                        </p>
+                                        Khan Academy began with one man tutoring his cousin in math. When scheduling became an issue he started making videos and posting
+                                        them on YouTube. Now it is a large organization that has lessons in math, science, computer programing, history, economics and more.
+                                        Students can not only watch lessons, they can also solve problems and take quizzes to test their understanding. Those who have an
+                                        account will be able to track their progress. Khan Academy has repeatedly shown itself to be a useful resource in learning a variety
+                                        of subjects.
+                                        <p>
+                                            If you are going to use Khan Academy you have to keep in mind that it is not a replacement for a good teacher. It can teach
+                                            you rote skills, but students need more than just that to really learn a subject. Many people believe that Khan Academy is
+                                            revolutionising the way things are taught. In reality it is not that different from the teaching methods students have seen for
+                                            generations. It has a do this then this approach. That being said, Khan Academy excels as a supplementary resource to improve your
+                                            understanding of what you have already learned.
+                                        </p>
+                                        <p>
+                                            Khan Academy helped me understand a subject I was struggling with. Without it I may never have learned to love chemistry. It
+                                            helped me in a way that my teacher could not and while it may not be perfect, it is still a resource that I and millions of
+                                            others have found to be incredibly useful.
+                                        </p>
+                                        <a href="https://www.khanacademy.org/" class="btn btn-primary">Khan Academy &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        Posted on November 3, 2018 by Richard Hess
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="container col-md-6">
+                            <div class="card-deck">
+                                <div class="card" type="button" data-toggle="collapse" data-target="#collapseLearningALanguage" aria-expanded="false">
+                                    <img class="card-img-top" src="pictures/learning.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning a Language</h5>
+                                        <div class="content" id="collapseLearningALanguage">
+                                            <p>
+                                                I just got out of a job interview and a question was asked: “What Languages do you know?”.
+                                                Well that's when I started getting flashbacks on trying to pick up languages. I would learn languages like ACL2, CSS, C++, Python,
+                                                ect... Some of those languages were similar in syntax, but others look vastly different. So I wanted to make a few things to pick up
+                                                on in order to start using a language.
+                                            </p>
+                                            <p>
+                                                1. Look at the language purpose
+                                            </p>
+                                            <p>
+                                                At first it may seem strange to look at the intent. With languages like CSS, HTML, and ACL2 we start to see the
+                                                importance of for this. For example ACL2 was made to emulate mathematical proofs and theories. This means ACL2 only
+                                                loops recursively (by calling the same function) instead of iteratively (while loop), plus there is no way to input information.
+                                                Thus if you are trying to input something instead of looking about the internet for a few hours, you can immediately know that it is
+                                                impossible in ACL2. Whereas you might be able to know that Java uses inputs and may recommend it as a different language to use.
+                                            </p>
+                                            <p>
+                                                2. Look at the language structures
+                                            </p>
+                                            <p>
+                                                Understanding if a language has if statements or while loops is a start, but it is also nice to understand how to enter the structures
+                                                into the computer. Sites like stackoverflow and w3schools play a major role in this step. Most languages do have documentation so I
+                                                personally follow an old teachers advice and google something like Java Loops or C++ documentation if it is not found on our site and
+                                                then let us know so we can check it out and perhaps add the site to our lists.
+                                            </p>
+                                            <p>
+                                                3. Look at declarations
+                                            </p>
+                                            <p>
+                                                Languages also have different ways to make variables. Python just uses var in front of a name, but Java and C++ makes you pick a
+                                                variable type (Strings, Doubles, Boolean, ect...) you want to use. This site will include many documentation sources, but as for
+                                                the amount of languages there are you may have to just google it and let us know what you found so we can check it out and perhaps
+                                                add it to our list.
+                                            </p>
+                                            <p>
+                                                At first remembering so many languages does seem challenging and tedious, but remember it gets easier every language you know. Cause
+                                                perhaps your getting an interview and they would like a candidate who knows a certain set of languages or a candidate who can recommend
+                                                a few languages for the given project.
+                                            </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            Posted on November 2, 2018 by Christopher Larsen
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                            <div class="container col-md-6">
+                                <div class="card" type="button" data-toggle="collapse" data-target="#collapseTutoringHelps" aria-expanded="false">
+                                    <img class="card-img-top" src="pictures/tutor_blog.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tutoring Helps</h5>
+                                        <div class="content" id="collapseTutoringHelps">
+                                            <p>
+                                                When I first began college I was rather prideful of my knowledge and didn't utilize all the resources I had available to me. Tutors are one
+                                                of these resource and are probably one of the more important ones. A good tutor is able to teach you even when your teacher can not. Using
+                                                this resource can be the difference between a pass and a fail.
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    My pride worked against me
+                                                </b>
+                                            </p>
+                                            <p>
+                                                For all of highschool I was the smart one. I never needed help with my homework and even when I didn't do it I could still ace my tests.
+                                                The ease I had with highschool ment I never learned proper studying habits. After graduation I was confident that college would be the same
+                                                and that first semester I didn't take it seriously. Boy was I in for a shock when I started struggling with my course load. I couldn’t keep
+                                                up and never once thought about getting some help.
+                                            </p>
+                                            <p>
+                                                After the first semester my confidence was shot an I transferred to a smaller school. My second school was Central Wyoming College. I spent
+                                                a year there before deciding I wasn’t ready for college and decided I need time off to get my head in order. It was six years before I
+                                                returned. That is when I consider my college education to have really begun.
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    Why tutors help
+                                                </b>
+                                            </p>
+                                            <p>
+                                                I never took advantage of tutors myself as I found that I didn’t need them after my discovery of Khan Academy. However I have talked to other students
+                                                who have utilized tutors and I have done some tutoring myself. I have to say that if I had used tutors myself I would have had a much easier time that first semester.
+                                                Sometimes you need a little extra help understanding course material and a tutor can be an enormous help. There's a few things that make tutors so helpful
+                                                <ul>
+                                                    <li>
+                                                        Tutors can provide one on one help and adapt their teaching methods to you.
+                                                    </li>
+                                                    <li>
+                                                        Tutors can provide encouragement. It is far more fun to learn when you have someone on your side to keep you going.
+                                                    </li>
+                                                    <li>
+                                                        Self paced learning. Teachers have to cater to a large number of students and can’t slow down for just one. With a tutor you can control the pace.
+                                                    </li>
+                                                    <li>
+                                                        Tutors can help you create good study habits. This is something that you will use for the rest of your life.
+                                                    </li>
+                                                    <li>
+                                                        Sometimes it is hard to ask questions in front of your peers. A tutor can allow you to ask those questions without pressure.
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                If you are struggling with any of your courses then I can not stress enough the importance of getting help. It is not shameful to need help and having a
+                                                tutor does not mean you are stupid. I made this mistake in my first semester and it took me six years to get back on track. I may be a more extreme case,
+                                                but please learn from my mistakes.
+                                            </p>
+                                        </div>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            Posted on November 1, 2018 by Richard Hess
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!-- Pagination -->
+                            <ul class="pagination justify-content-center mb-4">
+                                <li class="page-item disabled">
+                                    <a class="page-link " href="#">&larr; Older</a>
+                                </li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">Newer &rarr;</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+
+            <div class="container text-center text-md-left">
+
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <div class="col-md-4">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Social Media</h6>
+                        <a href="..."><p><i class="fas fa-address-book mr-3"></i></i> Blog</p></a>
+                        <a href="..."><p><i class="fab fa-facebook-square mr-3"></i></i> Facebook</p></a>
+                        <a href="..."><p><i class="fab fa-twitter-square mr-3"></i></i> Twitter</p></a>
+                    </div>
+
+                    <div class="col-md-4">
+                    </div>
+
+                    <div class="col-md-4">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+                        <p>
+                            <i class="fa fa-home mr-3"></i> 762  Norma Lane Vicksburg, LA
+                        </p>
+                        <p><i class="fa fa-envelope mr-3"></i> FoundScience@gmail.com</p>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-center text-md-left">© 2018 Copyright: <span class="yellow-text">Richard Hess & Christopher Larsen</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <!-- Angular JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+
+        <!-- Other JavaScript -->
+        <script>
+           
+        </script>
+
+
+    </body>
+</html>
