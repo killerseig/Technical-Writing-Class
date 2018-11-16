@@ -1,0 +1,122 @@
+.card-deck
+{
+    margin-bottom: 4em;
+}
+
+.card
+{
+	margin: .5em;
+}
+
+hr
+{ 
+  height: 3px;
+  color: #EAC67A;
+  background-color: #EAC67A;
+  border: none;
+}
+
+.navbar
+{
+	margin-bottom: 5rem !important;
+}
+
+.carousel .d-block
+{
+  width:auto;
+  max-height: 45em;
+}
+
+.carousel-caption 
+{
+    background: rgba(0, 0, 0, 0.45);
+	border-radius: 25px;
+}
+
+.dropdown .dropdown-menu 
+{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu 
+{
+    max-height: 200px;
+    opacity: 1;
+}
+
+.tab-content
+{
+	padding: 2em;
+}
+
+footer, .bg-dark
+{
+	background-color: #18121E !important;
+}
+
+footer p
+{
+	color: white;
+}
+
+footer a
+{
+	color: #984B43;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, .yellow-text, .navbar-brand
+{
+	color: #EAC67A !important;
+}
+
+h1, h2, h3, h4, h5, h6, .yellow-text, .navbar-brand
+{
+	color: #18121E;
+}
+
+.center, h1, h2, h3, h4, h5, h6
+{
+	text-align: center;
+}
+
+.rounded-border 
+{
+    border-radius: 10px!important;
+}
+
+.shadow-primary 
+{
+    -webkit-box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.container
+{
+	padding: 5000000 px !important;
+}
+
+.jumbotron
+{
+	border-radius: 0rem;
+}
+
+.fa
+{
+	font-size: 2 em;
+}

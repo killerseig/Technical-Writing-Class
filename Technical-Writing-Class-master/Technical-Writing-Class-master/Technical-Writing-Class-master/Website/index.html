@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="logo.svg">
+
+		<title>Found Science</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    
+		<!-- Custom Style Sheet -->
+		<link rel="stylesheet" href="CustomStyle.css">
+
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+	</head>
+	<body>
+		
+        <main role="main">
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="index.html">Found Science</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container" style="padding-bottom: 5em;">
+                <h1>Who We Are</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="pr-30-md">
+                            <div class="section-heading-line-left"></div>
+                            <div class="mt-20 text-content-big">
+                                <p>
+                                    In our experience it can be difficult to find useful resources for chemistry and computer science.
+                                    It may take hours for us to find a site that further explores our areas of expertise with reliable
+                                    and credible information. Google is an incredible tool that will greatly expedite the search for information,
+                                    but it is only useful if you know what you are searching for. Our website is designed so that a variety
+                                    of useful resources, some you may not have even known you needed, can all be found in one spot. This will
+                                    allow others to avoid the problems that we encountered. Every resource found on our website is one that
+                                    we have used in the past and would recommend to anyone else in our field.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <img alt="img" src="pictures/Motivation Picture.jpg" class="mt-15-xs rounded-border shadow-primary">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container" style="padding-bottom: 5em;" ng-app="search" ng-controller="searchContent">
+                <h1>Our Sources</h1>
+                <hr>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                        <a class="nav-item nav-link" id="nav-chemistry-tab" data-toggle="tab" href="#nav-chemistry" role="tab" aria-controls="nav-profile" aria-selected="false">Chemistry</a>
+                        <a class="nav-item nav-link" id="nav-computer-science-tab" data-toggle="tab" href="#nav-computer-science" role="tab" aria-controls="nav-contact" aria-selected="false">Computer Science</a>
+                        <a class="nav-item nav-link">Search: <input type="text" ng-model="searchBar.searchTags"></a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8 img-fluid">
+                                    <img alt="img" src="pictures/question-mark.jpg" class="mt-15-xs rounded-border shadow-primary">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pr-30-md">
+                                        <div class="section-heading">
+                                            <h4>How To Use</h4>
+                                        </div>
+                                        <div class="section-heading-line-left"></div>
+                                        <div class="mt-20 text-content-big">
+                                            <ol>
+                                                <li>
+                                                    Select subject tab
+                                                </li>
+                                                <li>
+                                                    Type in the keyword in the search bar <br>(leave search bar blank to see all)
+                                                </li>
+                                                <li>
+                                                    look through the table
+                                                </li>
+                                                <li>
+                                                    Click on table row to go to website
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-chemistry" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row text-center text-md-center">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                    <th style="width: 20%;">Name</th>
+                                    <th style="width: 70%;">Description</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class='clickable-row' ng-repeat="item in chemistry | filter:searchBar" data-href={{item.url}}>
+                                            <td>
+                                                <img style="width:75%; height: auto;" ng-src="{{item.image}}" />
+                                                <br>
+                                                <p class="text-muted">{{item.name}}</p>
+                                            </td>
+                                            <td class="text-md-left">
+                                                {{item.discription}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-computer-science" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row text-center text-md-center">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                    <th style="width: 20%;">Name</th>
+                                    <th style="width: 70%;">Description</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class='clickable-row' ng-repeat="item in computerScience | filter:searchBar" data-href={{item.url}}>
+                                            <td>
+                                                <img style="width:75%; height: auto;" ng-src="{{item.image}}" />
+                                                <br>
+                                                <p class="text-muted">{{item.name}}</p>
+                                            </td>
+                                            <td class="text-md-left">
+                                                {{item.discription}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+		<!-- Footer -->
+		<footer class="page-footer font-small mdb-color pt-4">
+
+			<div class="container text-center text-md-left">
+
+			  <div class="row text-center text-md-left mt-3 pb-3">
+
+				<div class="col-md-4">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Social Media</h6>
+				  <a href="..."><p><i class="fas fa-address-book mr-3"></i></i> Blog</p></a>
+				  <a href="..."><p><i class="fab fa-facebook-square mr-3"></i></i> Facebook</p></a>
+				  <a href="..."><p><i class="fab fa-twitter-square mr-3"></i></i> Twitter</p></a>
+				</div>
+
+				<div class="col-md-4">
+				</div>
+
+				<div class="col-md-4">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+				  <p>
+					<i class="fa fa-home mr-3"></i> 762  Norma Lane Vicksburg, LA</p>
+				  <p><i class="fa fa-envelope mr-3"></i> FoundScience@gmail.com</p>
+				</div>
+			  </div>
+
+			<hr>
+				<div class="row d-flex align-items-center">
+					<div class="col-md-7 col-lg-8">
+						<p class="text-center text-md-left">© 2018 Copyright: <span class="yellow-text">Richard Hess & Christopher Larsen</span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+		<!-- Angular JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+		<!-- Other JavaScript -->
+		<script>
+			angular.module('search', []).controller('searchContent', function($scope) {
+				$scope.chemistry = 
+					[
+						{ url: "https://www.khanacademy.org/", searchTags: "Khan Academy, ", name: "Khan Academy", image: "chemistry pics/KHANACADEMY.png", discription: "Khan Academy is an organization that provides free videos and interactive exercises in order to educate its viewers. You will find educational material on: Mathematics, Chemistry, Physics, Biology, Computer Programing, History, Government and Civics, Grammar, Economics and several other subjects. It is a useful resource for learning." },
+						{ url: "https://www.webqc.org/", searchTags: "WebQC", name: "WebQC", image: "", discription: "WebQC contains a variety of useful tools for chemists. Some of these tools include: Chemical equation balancer, Molar mass calculator and pH calculator. It has a number of Unit Conversion calculators, a periodic table and a list of point groups for inorganic chemistry. Finally it has a forum where you can ask questions." },
+						{ url: "http://www.chemspider.com/", searchTags: "ChemSpider", name: "ChemSpider", image: "chemistry pics/ChemSpider.jpg", discription: "Chemspider is a free database containing over 67 million different chemical structures. It provides information on chemical properties and associated information. The search function allows you to find a chemical with names, registry numbers, chemical structures, molecular formula and weight, CAS numbers and a variety of other sources. " },
+						{ url: "http://www.calistry.org/", searchTags: "Calistry", name: "Calistry", image: "chemistry pics/Calistry.png", discription: "Calistry an online chemistry calculator. It has over one hundred different calculators. " },
+						{ url: "https://www.name-reaction.com/", searchTags: "name reaction", name: "name-reaction", image: "chemistry pics/name-reaction.jpeg", discription: "Name Reaction is your go to source for organic chemistry reactions. It is clear and detailed to make learning easier." },
+						{ url: "https://chemicalize.com", searchTags: "chemicalize", name: "Chemicalize", image: "chemistry pics/Chemicalize.png", discription: "Chemicalize is an online database that lets you search for chemicals and documents relating to those chemicals. If you don't know the name of a molecule you can draw it. You are also capable of typing the url of websites into the search bar and chemicalize will highlight chemical names and structures. You will need to make an account to use these free features." },
+						{ url: "https://phet.colorado.edu/", searchTags: "PhET", name: "PhET", image: "chemistry pics/phet.png", discription: "PhET provides free, fun, interactive science and mathematics based simulations. It has over 125 different simulations for students and teachers. Each one is designed to be an engaging and fun way to learn about a variety of subjects." },
+						{ url: "https://www.chemguide.co.uk/", searchTags: "chemguide", name: "Chemguide", image: "chemistry pics/Chemguide.png", discription: "Chemguide is a website useful for learning about the basics of chemistry. It concentrates on the bits  that textbooks tend to do to quickly. To properly use this website you should already have an idea of what you need to know." },
+						{ url: "https://webbook.nist.gov/chemistry/", searchTags: "webbook, nist", name: "NIST Chemistry WebBook", image: "chemistry pics/NIST Chemical WebBook.png", discription: "NIST Chemistry WebBook is an online database with over 40000 different compounds. It mostly has organic compounds with a few small inorganic compounds. It has a search function that allows you to find information based on the name, formula, CAS number, IUPAC identifier and several other sources." },
+						{ url: "http://scholarpedia.org/article/Main_Page", searchTags: "scholarpedia", name: "Scholarpedia", image: "chemistry pics/Scholarpedia.png", discription: "Scholarpedia is an open-access peer-reviewed encyclopedia that was based on wikipedia and shares some similarities. It is better known for its differences though. Unlike most wikis, all new articles must first receive a sponsorship to validate identity authority and ability of the authors. All articles undergo scholarly peer-review, requiring approval from at least two experts. Despite being related to wikipedia all articles found on scholarpedia are accurate and can be cited like any other scholarly article." },
+						{ url: "https://www.chemicalaid.com/", searchTags: "chemicalaid", name: "ChemicalAid", image: "", discription: "ChemicalAid provides a list of elements and information on each one. It also has useful tools such as periodic trends and several chemical calculators. It has a basic periodic table and a forum where questions can be asked. There are several lists one for acids and another for bases. Finally it has several useful lessons for chemistry students." },
+						{ url: "http://www.chemicalforums.com/", searchTags: "chemicalforms", name: "Chemical Forums", image: "", discription: "Chemical Forums is a forum where you can ask any chemistry question you have. It is seperated by subject for ease of use. Unlike other listed sites that have forums, this one is solely dedicated as a forum and is the best to use." },
+					];
+				$scope.computerScience = 
+					[
+						{ url: "https://www.khanacademy.org/", searchTags: "Khan Academy", name: "Khan Academy", image: "chemistry pics/KHANACADEMY.png", discription: "Khan Academy is an organization that provides free videos and interactive exercises in order to educate its viewers. You will find educational material on: Mathematics, Chemistry, Physics, Biology, Computer Programing, History, Government and Civics, Grammar, Economics and several other subjects. It is a useful resource for learning." },
+						{ url: "https://www.w3schools.com/", searchTags: "w3schools, Bootstrap, Website, CSS, Styling, JavaScript, jQuery, AngularJS, JSON,AJAX, SQL, PHP, Python, Server, ASP, Node.js, Raspberry Pi, XML", name: "w3schools", image: "", discription: "W3schools is a great website to understand how to do anything web related. You can follow their documentation and tutorials to figure out every aspect (front end and back) to creating a website." },
+						{ url: "https://stackoverflow.com/", searchTags: "Stack Overflow, Algorithem, Java, JavaScript, C++, Python, Server, Errors, Bugs", name: "Stack Overflow", image: "", discription: "Named after the one of the most common errors this website is a great forum that every programmer uses to resolve any programming issue they run into." },
+						{ url: "https://angular.io/", searchTags: "Angular JS, JavaScript", name: "Angular JS", image: "", discription: "A common and easy to use Java Script framework to allow variableistic code onto your website." },
+						{ url: "https://www.codecademy.com", searchTags: "Code Academy, Learn, Website, Applications, HTML, CSS, JavaScript, Python, SQL, Ruby on Rails, AngularJS, Git, Command Line, ReactJS", name: "Code Academy", image: "", discription: "This is a great site for overall beginners in a programming language used for the web. Their tutorials go from teaching html, to deploying a homemade web application." },
+						{ url: "https://github.com/", searchTags: "Git, Repository, GitHub", name: "GitHub", image: "", discription: "Git is a useful system in allowing multiple programmers to work on the same project at once. It is extreamly simple to use and allows your code to be available online. It keeps track of each itteration of your work, and as long as each programmer changed different lines of code the system can merge all programmers work." },
+						{ url: "http://www.cplusplus.com/", searchTags: "Algorithem, C++, Errors, Bugs, Documentation", name: "C++", image: "", discription: "C++ is one of the most known languages in the world. The biggest reason is due to its documentation. This site explains every aspect C++ has inside it and provide examples." },
+						{ url: "https://docs.oracle.com/en/java/javase/11/", searchTags: "Java, Algorithem, Errors, Bugs, Documentation", name: "Java", image: "", discription: "Most people recommend this language for beginners. The underlying technology actively interperates your code to the platform its running on to allow platform flexability in exchange for efficiency." },
+						{ url: "https://electronjs.org/", searchTags: "JavaScript, HTML, CSS, Electron, Application", name: "Electron", image: "", discription: "Named after the one of the most common errors this website is a great forum that every programmer uses to resolve any programming issue they run into." },
+						{ url: "https://facebook.github.io/react-native/docs/getting-started", searchTags: "JavaScript, CSS, HTML, React Native, Application", name: "React Native", image: "", discription: "A brother to electron this application converts the electron file to ios and android apps." },
+						{ url: "https://www.tutorialspoint.com/", searchTags: "Tutorials Point, Algorithem, Computer Science, Server, SQL, Server, VBA, IOS, Android, C++, C#, CSS, HTML, JavaScript, AngularJS", name: "Tutorials Point", image: "", discription: "Web developers love using this system as it translates your web application to a desktop application and provides access to your desktop, like deleting files, that are banned on web application. Apps like Discord, Skype, and GitHub are built using this platform." },
+					];
+					
+			});
+			
+			jQuery(document).ready(function($) {
+				$(".clickable-row").click(function() {
+					window.open($(this).data("href"));
+				});
+			});
+		</script>
+	</body>
+</html>
